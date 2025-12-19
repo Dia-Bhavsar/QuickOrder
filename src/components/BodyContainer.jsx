@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import RestaurantCard from "./RestaurantCard";
-import { mockImageData } from "../utils/mockData";
 import Shimmer from "./Shimmer";
 
 const BodyContainer = () => {
@@ -66,11 +65,7 @@ const BodyContainer = () => {
       </div>
       <div className="restaurantContainer">
         {filteredRestaurants.map((res, index) => (
-          <RestaurantCard
-            key={res.info.id}
-            resData={res.info}
-            imageData={mockImageData[index]}
-          />
+          <RestaurantCard key={res.info.id} resData={res.info} />
         ))}
       </div>
     </div>
