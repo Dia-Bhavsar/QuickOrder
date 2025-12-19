@@ -1,0 +1,138 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 0.5px solid black;
+}
+
+.navItems > ul {
+  display: flex;
+}
+
+.navItems > ul > li {
+  list-style-type: none;
+  gap: 20px;
+  margin: 10px;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Resturant Card */
+
+.restaurantContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.restaurantCard {
+  width: 250px;
+  margin: 30px 20px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 5px grey;
+  border-radius: 10px;
+  border: 0.2px solid gray;
+}
+.restaurantImage {
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+}
+.restaurantCard img {
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+}
+.resturantCard h3 {
+  margin: 20px 0 5px 0;
+}
+.resturantCard p {
+  margin: 5px 0;
+  color: grey;
+}
+.resturantCard span {
+  font-weight: bold;
+}
+.resturantContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer {
+  text-align: center;
+  padding: 10px;
+  border-top: 0.5px solid black;
+  margin-top: 20px;
+}
+
+/* filter button styles */
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  /* justify-content: center; */
+}
+
+.toprated {
+  background-color: #f0c14b;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Shimmer Styles */
+.shimmerContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.shimmerCard {
+  width: 250px;
+  height: 220;
+  margin: 30px 20px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 5px grey;
+  border-radius: 10px;
+}
+.shimmerCard img {
+  width: 200px;
+  height: 300px;
+}
+
+.login {
+  background-color: #f0c14b;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.search input {
+  width: 300px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.searchbtn {
+  background-color: #f0c14b;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,26 @@
+{
+  "name": "quick-order-app",
+  "version": "1.0.0",
+  "description": "Food Order Application",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dia-Bhavsar/QuickOrder.git"
+  },
+  "author": "Dia Bhavsar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dia-Bhavsar/QuickOrder/issues"
+  },
+  "homepage": "https://github.com/Dia-Bhavsar/QuickOrder#readme",
+  "dependencies": {
+    "parcel": "^2.16.3",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  }
+}
