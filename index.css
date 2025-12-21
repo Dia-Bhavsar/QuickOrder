@@ -136,3 +136,48 @@
   padding: 5px 10px;
   cursor: pointer;
 }
+.navItems > ul > li > Link {
+  text-decoration: none;
+  color: black;
+}
+.navItems > ul > li > Link:hover {
+  color: red;
+}
+
+.navItems > ul > li {
+  text-decoration: none;
+  color: black;
+}
+
+.navItems > ul > li:hover {
+  color: red;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.restaurantContainer a {
+  text-decoration: none;
+  color: black;
+}
+
+.restaurant-menu {
+  padding: 20px;
+}
+
+.itemCard {
+  display: flex;
+  justify-content: space-between;
+  border: 0.5px solid gray;
+  margin: 10px;
+  padding: 10px;
+}
+
+.itemImage img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
