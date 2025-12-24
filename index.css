@@ -181,3 +181,20 @@ body {
   height: 100px;
   border-radius: 10px;
 }
+
+.user-data {
+  border: 1px solid gray;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px lightgray;
+}
+.user-data h1 {
+  margin-bottom: 15px;
+}
+.user-data h2 {
+  margin: 10px 0;
+}
+.user-data h3 {
+  margin-top: 15px;
+}
