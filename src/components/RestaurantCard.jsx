@@ -12,12 +12,14 @@ const RestaurantCard = (props) => {
     "https://via.placeholder.com/400x300?text=No+Image";
 
   return (
-    <div className="restaurantCard">
-      <img src={imageSrc} alt="image-name" />
-      <h3>{name}</h3>
-      <p>{Array.isArray(cuisines) ? cuisines.join(", ") : cuisines}</p>
-      <p>{avgRating}</p>
-      <p>{sla?.slaString}</p>
+    <div className="p-4 m-4 w-60 border border-solid border-gray-300 rounded-md hover:shadow-lg">
+      <img className="rounded-md " src={imageSrc} alt="image-name" />
+      <h3 className="font-semibold text-md my-2">{name}</h3>
+      <p className="text-sm">
+        {Array.isArray(cuisines) ? cuisines.join(", ") : cuisines}
+      </p>
+      <p className="text-sm">{avgRating}</p>
+      <p className="text-sm">{sla?.slaString}</p>
     </div>
   );
 };
