@@ -17,4 +17,3 @@
         |-- Copyrights
         |-- ContactUs
 
-# State - whenever the state variable updates/changes react will rerender the component.
