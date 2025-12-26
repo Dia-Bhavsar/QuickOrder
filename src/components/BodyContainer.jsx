@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard, { withPromotionLabel } from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import { RESTAURANT_API_URL } from "../utils/constants";
@@ -9,6 +9,7 @@ const BodyContainer = () => {
   const [restaurants, setRestaurants] = useState([]);
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [searchText, setSearchText] = useState("");
+  const RestaurantPromotionLabel = withPromotionLabel(RestaurantCard);
   useEffect(() => {
     fetchData();
   }, []);
@@ -77,7 +78,11 @@ const BodyContainer = () => {
       <div className="flex flex-wrap justify-center">
         {filteredRestaurants.map((res, index) => (
           <Link to={`/restaurant/${res.info.id}`} key={res.info.id}>
-            <RestaurantCard resData={res.info} />
+            {res.info.veg ? (
+              <RestaurantPromotionLabel resData={res.info} />
+            ) : (
+              <RestaurantCard resData={res.info} />
+            )}
           </Link>
         ))}
       </div>
