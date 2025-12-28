@@ -12,13 +12,10 @@ class UserClass extends React.Component {
     };
   }
   async componentDidMount() {
-    console.log("UserClass component has mounted.");
-
     const data = await fetch("https://api.github.com/users/dia-bhavsar");
     const json = await data.json();
 
     this.setState({ userData: json });
-    console.log(json);
   }
   render() {
     const { name, location, contact, avatar_url } = this.state.userData;

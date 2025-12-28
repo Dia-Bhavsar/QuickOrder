@@ -29,7 +29,6 @@ const BodyContainer = () => {
   };
 
   const onlineStatus = useOnlineStatus();
-  console.log("use online Status", onlineStatus);
   if (onlineStatus === false) {
     return <h1>You are offline!! Please check your internet connection</h1>;
   }
